@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién es este Pokémon?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quién es este Pokémon?</h1>
+        <div class="game-area">
+            <div class="pokemon-image-container">
+                <img id="pokemon-image" src="" alt="Pokémon Silhouette">
+            </div>
+            <div class="controls">
+                <input type="text" id="guess-input" placeholder="Escribe el nombre del Pokémon">
+                <div class="buttons">
+                    <button id="guess-button">¡Adivinar!</button>
+                    <button id="new-pokemon">Nuevo Pokémon</button>
+                </div>
+            </div>
+            <div id="message"></div>
+            <div class="score">
+                <p>Aciertos: <span id="correct">0</span></p>
+                <p>Intentos: <span id="attempts">0</span></p>
+            </div>
+        </div>
+    </div>
+    <audio id="correct-sound" src="sounds/correct.mp3" preload="auto"></audio>
+    <audio id="wrong-sound" src="sounds/wrong.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
